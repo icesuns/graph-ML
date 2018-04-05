@@ -46,6 +46,7 @@ class Graph:
         probability = np.zeros(shape=[self.num_vertex, self.num_vertex], dtype=float)
         for i in range(self.num_vertex):
             if self.outDegree[i] == 0:
+                # if outdegree is 0, the set set probability as 1/n
                 outDegree[i] = 1
                 for j in range(self.num_vertex):
                     probability[i][j] = float(1 / self.num_vertex)
