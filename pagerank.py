@@ -76,13 +76,6 @@ class Graph:
 
 
 
-
-
-
-
-
-
-
 if __name__ == "__main__":
     dir = "/home/icesun/workspace/graph/"
     for index, path in enumerate(os.listdir(dir)):
